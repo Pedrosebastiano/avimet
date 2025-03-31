@@ -1,0 +1,54 @@
+
+.FiltroTags {
+    position: relative;
+    display: inline-block;
+}
+
+.FiltroTagsButton {
+    background-color: #d9f5de;
+    color: #003428;
+    border: 1px solid #003428;
+    border-radius: 12px;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+.FiltroTagsButton:hover {
+    background-color: #00342811;
+  }
+
+.FiltroTagsMenu {
+    position: absolute;
+    background-color: white; /* Fondo del menú */
+    border: 1px solid #ccc; /* Borde del menú */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 5px;
+    z-index: 10; /* Asegúrate de que el menú esté por encima de otros elementos */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
+}
+
+.selected {
+    background-color: #4CAF50 !important; /* Verde más oscuro */
+    color: white !important;
+    font-weight: bold;
+}
+
+
+.FiltroTagsMenu li {
+    padding: 10px 15px; /* Espaciado interno */
+    background-color: #f0f0f0; /* Color de fondo de las opciones */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.FiltroTagsMenu li:hover {
+    background-color: #d9d9d9; /* Color al pasar el mouse sobre las opciones */
+}
+
+.selected {
+    background-color: #a8e6cf; /* Color verde claro para la opción seleccionada */
+    color: #333; /* Color del texto */
+}

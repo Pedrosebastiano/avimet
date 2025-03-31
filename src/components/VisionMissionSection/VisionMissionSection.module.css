@@ -1,0 +1,86 @@
+.container {
+  justify-content: center;
+  gap: 24px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  width: 80%;
+}
+
+@media (width<=1250px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+}
+
+.visionCard,
+.missionCard {
+  box-sizing: border-box;
+  background-color: #003428;
+  border-radius: 30px;
+  width: 50%;
+  height: 354px;
+  padding: 45px 41px;
+}
+
+@media (width<=1250px) {
+  .visionCard,
+  .missionCard {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+}
+
+@media (width<=640px) {
+  .visionCard,
+  .missionCard {
+    border-radius: 20px;
+    padding: 20px;
+  }
+}
+
+.title {
+  color: #a3e96c;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  font-family: "Instrument Serif", serif;
+  font-size: 48px;
+  line-height: 112%;
+  display: flex;
+}
+
+@media (width<=1250px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media (width<=640px) {
+  .title {
+    margin-bottom: 16px;
+    font-size: 32px;
+  }
+}
+
+.content {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 112%;
+}
+
+@media (width<=1250px) {
+  .content {
+    font-size: 14px;
+  }
+}
+
+@media (width<=640px) {
+  .content {
+    font-size: 13px;
+  }
+}

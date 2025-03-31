@@ -1,0 +1,406 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 80vh;
+  margin-top: 83px;
+  background-color: rgba(217, 245, 222, 0.85);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 120px;
+  position: relative;
+}
+
+.return-button {
+  position: absolute;
+  top: 40px;
+}
+
+.arrow-back {
+  width: 18px;
+}
+
+.info-container {
+  display: flex;
+  flex-flow: row;
+  height: 55px;
+  width: 185px;
+  color: #a3e96c;
+  border: #a3e96c solid;
+  font-family: "Roboto";
+  font-size: 23px;
+  background: transparent;
+  border-radius: 22px;
+  border-width: 3px;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.comment-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.sign {
+  margin-left: 10px;
+  width: 35px;
+}
+
+.clock {
+  margin-left: 10px;
+  width: 35px;
+}
+
+.difficulty {
+  margin-left: 10px;
+  width: 35px;
+}
+
+.map-banner {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+  background-color: #003428;
+  padding-bottom: 50px;
+}
+
+.map-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  width: 50%;
+  padding: 0 120px;
+}
+
+.map {
+  border-top-left-radius: 84px;
+  border-top-right-radius: 170px;
+  border-bottom-left-radius: 170px;
+  border-bottom-right-radius: 84px;
+  border: #a3e96c solid;
+  border-width: 5px;
+  width: 560px;
+  height: 350px;
+}
+
+.text-container {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  justify-content: center;
+  color: #a3e96c;
+  font-family: "Instrument Serif";
+  font-weight: lighter;
+  font-size: 35px;
+  gap: 20px;
+  width: 50%;
+}
+
+.text-title {
+  color: #d9f5de;
+  font-size: 12px;
+  margin: 0;
+}
+
+.first-part {
+  color: white;
+}
+
+.destination-carousel {
+  position: relative;
+  z-index: auto;
+  margin: 0;
+  top: -70px;
+}
+
+.destination-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-container,
+.guide-card-container {
+  max-width: 80%;
+  padding: 32px 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #003428;
+  border-radius: 26px;
+}
+
+.guide-card-container {
+  background-color: #0da665;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  gap: 50px;
+}
+
+.guide-content.content-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.destination-image,
+.guide-image {
+  object-fit: cover;
+  width: 307px;
+  height: 243px;
+}
+
+.text-content {
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: Roboto;
+  font-size: 14px;
+  display: flex;
+  max-width: 450px;
+}
+.destination-image {
+  object-fit: cover;
+  border-radius: 21px 27px 127px 23px;
+  border: #a3e96c solid;
+  width: 307px;
+  height: 243px;
+}
+
+.guide-image {
+  object-fit: cover;
+  border-radius: 27px 21px 23px 127px;
+  border: #a3e96c solid;
+  width: 307px;
+  height: 243px;
+  justify-self: end;
+}
+
+.text-content {
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: start;
+  justify-content: center;
+  font-family: Roboto;
+  font-size: 14px;
+  display: flex;
+  max-width: 450px;
+}
+
+.title {
+  color: #a3e96c;
+  font-size: 42px;
+  font-weight: lighter;
+  font-family: Instrument Serif;
+}
+
+.guide-title {
+  color: #003428;
+  font-size: 42px;
+  font-weight: lighter;
+  font-family: Instrument Serif;
+}
+
+.guide-info {
+  color: #fff;
+  align-self: stretch;
+  margin-top: 9px;
+  font-size: 21px;
+  line-height: 16px;
+}
+
+.description {
+  color: #fff;
+  align-self: stretch;
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.info-section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.comments-section {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding-bottom: 30px;
+}
+
+@media (width<1100px) {
+  .map-container {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .about-container {
+    align-items: center;
+    font-size: 35px;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .map-banner {
+    height: fit-content;
+  }
+
+  .destination-card {
+    width: 80%;
+    height: auto;
+  }
+  .content-wrapper,
+  .guide-content.content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .destination-image,
+  .guide-image {
+    width: 90%;
+    height: auto;
+  }
+
+  .card-container,
+  .guide-card-container {
+    max-width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .content-wrapper,
+  .guide-content.content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .title,
+  .guide-title{
+    width: 100%;
+    max-width: 100%;
+    text-align: center; 
+  }
+
+  .destination-image,
+  .guide-image {
+    width: 90%;
+    height: auto;
+  }
+
+  .card-container,
+  .guide-card-container {
+    max-width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center; 
+  }
+
+  .btn-quaternary {
+    align-self: center; 
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .comments-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  
+}
+
+@media (width<=650px) {
+  .header-container {
+    height: 50vh;
+  }
+
+  .map {
+    width: 80%;
+    height: auto;
+  }
+
+  .return-button {
+    left: 50px;
+  }
+
+  .arrow-back {
+    width: 10px;
+  }
+}
+
+@media (width<=480px) {
+  .header-container {
+    height: 40vh;
+    padding: 20px 60px;
+  }
+
+  .guide-image {
+    width: 90%;
+    height: auto;
+  }
+
+  .destination-image {
+    width: 90%;
+    height: auto;
+  }
+
+  .return-button {
+    top: 25px;
+    left: 40px;
+  }
+
+  .arrow-back {
+    width: 10px;
+  }
+}

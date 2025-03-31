@@ -1,0 +1,278 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 83px;
+  min-height: 100vh;
+}
+
+.destinationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 60%;
+}
+
+.title {
+  margin-top: 7%;
+  font-size: 5rem;
+  color: #003428;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.finalTitle {
+  color: #0da665;
+  font-style: italic;
+}
+
+.separator {
+  width: 70%;
+  border: 1px solid #003428;
+  margin: 10px auto;
+}
+
+.subtitle {
+  font-family: "Instrument Serif", "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #0da665;
+  text-align: center;
+  font-weight: 600;
+  margin: 30px 20px;
+}
+
+@media (max-width: 991px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .searchBox {
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .searchContainer,
+  .filterSelect {
+    width: 100%;
+    text-align: center;
+  }
+
+  .filterSelect {
+    margin-left: 0;
+  }
+}
+
+.createContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+}
+
+.createTag {
+  width: 100%;
+  background-color: #003428;
+  color: #fff;
+}
+
+.createTag:hover {
+  background-color: #a3e96c;
+  color: #003428;
+  border: none;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 53%;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  background-color: #d9f5de;
+  border: 1px solid #003428;
+  border-radius: 12px;
+  color: #003428;
+}
+
+.searchInput::placeholder {
+  color: #003428;
+}
+
+.searchInput:hover {
+  background-color: #00342811;
+}
+
+.searchInput:focus {
+  outline: none;
+  background-color: #00342811;
+  border: 1px solid #003428;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  color: #003428;
+  font-size: 20px;
+}
+
+.formContainer {
+  display: flex;
+  width: 50%;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+
+.formContainer.show {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.inputName {
+  font-family: "Roboto";
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 1px solid #003428;
+  border-radius: 8px;
+}
+.textareaField {
+  font-family: "Roboto";
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 1px solid #003428;
+  border-radius: 8px;
+}
+
+.statusMessage {
+  font-size: 0.7rem;
+  color: #003428;
+  font-family: "Roboto";
+  font-weight: 700;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.statusMessage:empty {
+  display: none;
+}
+
+.textareaField {
+  resize: none;
+  height: 80px;
+}
+
+.inputName::placeholder,
+.textareaField::placeholder {
+  color: #003428;
+  font-family: "Roboto";
+}
+
+.inputName:hover,
+.textareaField:hover {
+  background-color: #00342811;
+}
+
+.inputName:focus,
+.textareaField:focus {
+  outline: none;
+  background-color: #00342811;
+  border: 1px solid #003428;
+}
+.addButton {
+  width: 50%;
+  padding: 10px;
+  background-color: #003428;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.addButton:hover {
+  background-color: #a3e96c;
+  color: #003428;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  margin: 10px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.filterButton {
+  background-color: #003428;
+  color: white;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.filterDropdown {
+  position: absolute;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 0px;
+  border-radius: 10px;
+  width: 100%;
+  top: 40px;
+}
+
+.filterItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 0px 10px;
+}
+
+.removeFilterIcon {
+  cursor: pointer;
+  color: red;
+}
+
+.noFilters {
+  font-size: 12px;
+  color: gray;
+}
+

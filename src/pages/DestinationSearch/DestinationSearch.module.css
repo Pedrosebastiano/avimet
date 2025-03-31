@@ -1,0 +1,136 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 83px;
+  min-height: 100vh;
+}
+
+.destinationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  font-size: 5rem;
+  color: #003428;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.finalTitle {
+  color: #0da665;
+  font-style: italic;
+}
+
+.separator {
+  width: 70%;
+  border: 1px solid #003428;
+  margin: 10px auto;
+}
+
+.subtitle {
+  font-family: "Instrument Serif", "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #0da665;
+  text-align: center;
+  font-weight: 600;
+  margin: 30px 20px;
+}
+
+@media (max-width: 991px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .searchBox {
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .searchContainer,
+  .filterSelect {
+    width: 100%;
+    text-align: center;
+  }
+
+  .filterSelect {
+    margin-left: 0;
+  }
+}
+
+.searchBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 53%;
+  margin-bottom: 20px;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  background-color: #d9f5de;
+  border: 1px solid #003428;
+  border-radius: 12px;
+  color: #003428;
+}
+
+.searchInput::placeholder {
+  color: #003428;
+}
+
+.searchInput:hover {
+  background-color: #00342811;
+}
+
+.searchInput:focus {
+  outline: none;
+  background-color: #00342811;
+  border: 1px solid #003428;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  color: #003428;
+  font-size: 20px;
+}
+
+.filterSelect {
+  background-color: #d9f5de;
+  color: #003428;
+  border: 1px solid #003428;
+  border-radius: 12px;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.filterSelect:hover {
+  background-color: #00342811;
+}
+
+.filterSelect:focus {
+  outline: none;
+  border: 1px solid #003428;
+}

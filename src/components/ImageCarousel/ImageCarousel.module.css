@@ -1,0 +1,106 @@
+.navButton {
+    font-size: 16px;
+    padding: 4px 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+    width: 100%;
+    background-color: #1b4332;
+
+}
+
+@media (min-width: 768px) {
+    .navButton {
+        width: unset;
+        font-size: 21px;
+    }
+    
+}
+
+.navButton:hover{
+    background-color: #a3e96c;
+    transform: scale(1.1)
+ }
+
+.carouselContainer {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+    margin: 0;
+}
+
+.carouselContainer img {
+    height: 200px;
+}
+
+@media (min-width: 768px) {
+    .carouselContainer img, .carouselContainer{
+        height: unset;
+    }
+}
+
+.carouselBackground .carousel-item {
+    height: 100vh;
+}
+
+.carouselBackground .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carouselCaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: "xxxx";
+    z-index: 2; 
+    padding: 20px;
+    width: 90%;
+}
+
+.carouselOverlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: "xxxx";
+    z-index: 1;
+}
+
+
+.Text{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    font-family: "xxxx";
+    font-weight: bold;
+    line-height: 10px;
+}
+
+@media (min-width: 768px) {
+    .Text {
+        font-size: 2.6rem;
+        line-height: 29px;
+    }
+
+}
+
+@media (min-width: 1140px) {
+    .Text {
+        font-size: 3.2rem;
+        line-height: 40px;
+    }
+    .navButton {
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+}

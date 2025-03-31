@@ -1,0 +1,145 @@
+.inputBg {
+  color: gray;
+  background-color: #f2f2f2;
+  border-radius: 13.992px;
+  max-width: 334px;
+  padding: 16px;
+  font-family:
+    Roboto,
+    -apple-system,
+    Helvetica,
+    sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 16px;
+  overflow: hidden;
+  box-shadow:
+    0 114.171px 31.901px #0000,
+    0 73.316px 29.102px #00000003,
+    0 41.415px 24.625px #0000000d,
+    0 18.469px 18.469px #00000017,
+    0 4.477px 10.074px #0000001a;
+}
+
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  height: 100%;
+}
+
+.starRating {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-end;
+  padding: 0 0 4px 0;
+}
+
+.starButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ccc;
+  transition: color 0.2s ease;
+  padding: 0;
+}
+
+.starButton:hover,
+.starActive {
+  color: #ffd700;
+}
+
+.inputWrapper {
+  width: 100%;
+  min-height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.escribirunaresea {
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  width: 100%;
+  min-height: 150px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: none;
+  text-align: left;
+}
+
+.escribirunaresea:focus {
+  outline: none;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.cancelButton {
+  background-color: #333;
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #444;
+}
+
+.sendButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.sendButton:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 1100px) {
+  .inputBg {
+    max-width: 100%;
+    width: 500px  }
+}
+
+@media (max-width: 600px) {
+  .inputBg {
+    max-width: 100%;
+    width: 400px;
+    padding: 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 475px) {
+  .inputBg {
+    padding: 8px;
+    font-size: 10px;
+    width: 250px;
+  }
+}
+
+@media (width < 325px) {
+  .inputBg {
+    max-width: 80%;
+    height: auto;
+  }
+}

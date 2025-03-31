@@ -1,0 +1,102 @@
+.mainContainer {
+    background: linear-gradient(rgba(0, 52, 40, 0.731), rgba(0, 52, 40, 0.731)), 
+                url("../../assets/home/background-avila.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 200px 0px;
+  }
+  
+  @media (width >= 1024px) {
+    .Carousel {
+      position: relative;
+      z-index: auto;
+      margin:0;
+      bottom: -70px;
+    }
+  }
+  
+  .contentWrapper {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+ 
+  @media (width <= 1024px) {
+    .Carousel {
+      position: relative;
+      z-index: auto;
+      margin:0;
+      bottom: -70px;
+    }
+  }
+  
+  @media (width <= 640px) {
+    .mainContainer {
+      padding: 80px 0px;
+    }
+    .contentWrapper {
+      padding: 20px 0px;
+    }
+    .Carousel {
+      position: relative;
+      z-index: auto;
+      margin:0;
+      bottom: -70px;
+    }
+  }
+
+  
+  .title {
+    margin-bottom: 30px;
+    font-family: Instrument Serif, serif;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  
+  @media (width <= 991px) {
+    .title {
+      font-size: 36px;
+    }
+  }
+  
+  @media (width <= 640px) {
+    .title {
+      font-size: 28px;
+    }
+  }
+  
+  .titleStart {
+    color: #fff;
+  }
+  
+  .titleEnd {
+    color: #a3e96c;
+  }
+  
+  .description {
+    color: #d9f5de;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    font-family: Instrument Serif, serif;
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  
+  @media (width <= 991px) {
+    .description {
+      padding: 0 20px;
+      font-size: 32px;
+    }
+  }
+  
+  @media (width <= 640px) {
+    .description {
+      padding: 0 10px;
+      font-size: 24px;
+    }
+  }
+  
+

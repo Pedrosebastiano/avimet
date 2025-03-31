@@ -1,0 +1,38 @@
+.btn1 {
+    font-family: "Roboto", "Inter", sans-serif;
+    background: #1b4332;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 30%;
+  }
+  
+.btn1:hover {
+background: #a3e96c;
+color: #1b4332;
+}
+
+
+@media (max-width: 1200px) {
+
+  .btn1 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn1 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn1 {
+    width: 90%;
+  }
+}

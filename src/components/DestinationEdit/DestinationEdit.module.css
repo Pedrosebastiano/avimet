@@ -1,0 +1,250 @@
+.tarjetaDestino {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px auto;
+  color: white;
+  height: 200px;
+  background-color: #0da665;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.tarjetaDestino2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px auto;
+  color: rgb(0, 0, 0);
+  border: 1px solid #003428;
+  height: 200px;
+  background-color: #d9f5de;
+  width: 100%;
+}
+.imagenDestino,
+.imagenVerde {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 80%;
+  border-radius: 110px 20px 110px 20px;
+}
+
+.imagenDestino {
+  object-fit: cover;
+  border: 3px solid #a3e96c;
+  width: 30%;
+}
+
+.imagenVerde {
+  border: 2px solid #003428;
+  background-color: #d9f5de;
+  width: 44%;
+}
+
+@media (max-width: 1130px) {
+  .imagenDestino,
+  .imagenVerde {
+    width: 70%;
+    height: auto;
+    aspect-ratio: 5 / 3;
+    margin: 30px 0;
+  }
+}
+
+.contenidoDestino {
+  margin: 0 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+
+.tituloDestino {
+  font-size: 2rem;
+  font-family: "Instrument Serif";
+  font-weight: 500;
+  color: #003428;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.btnEdit {
+  width: 100%;
+  margin: 5px;
+}
+
+.trashButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #ff4d4d;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 18px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.trashButton:hover {
+  background-color: #ff1a1a;
+}
+
+.tarjetaDestino,
+.tarjetaDestino2 {
+  position: relative;
+}
+
+@media (max-width: 1130px) {
+  .tarjetaDestino,
+  .tarjetaDestino2 {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  .imagenDestino {
+    width: 70%;
+    height: auto;
+    margin: 30px 0;
+  }
+
+  .imagenVerde {
+    width: 70%;
+    margin: 30px 0;
+    height: 60%;
+  }
+
+  .tituloDestino,
+  .tarjetaDestino2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .btnEdit {
+    width: 100%;
+  }
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.confirmButton,
+.cancelButton {
+  flex: 1;
+  max-width: 120px;
+  text-align: center;
+}
+
+.confirmButton {
+  background: #ff4d4d;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.confirmButton:hover {
+  background: #ff1a1a;
+}
+
+.cancelButton {
+  background: gray;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  background: #575756;
+}
+.successMessage {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 200, 0, 0.9);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1000;
+    animation: fadeOut 2s forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,15 @@
+.postulacion_button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #a3e96c;
+    color: #003428;
+    
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  
+  .postulacion_button:hover {
+    color: #fff;
+    background-color: #003428; 
+  }

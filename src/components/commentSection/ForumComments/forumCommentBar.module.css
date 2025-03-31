@@ -1,0 +1,82 @@
+.inputContainer {
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+  display: flex;
+}
+
+@media (width <=640px) {
+  .inputContainer {
+    width: 75%;
+  }
+
+  .inputField {
+    width: 100%;
+  }
+
+  .actionArea {
+    align-self: flex-end;
+    margin-top: 10px; /* Add this line */
+  }
+}
+
+.inputField {
+  color: #003428;
+  letter-spacing: 0.251px;
+  background-color: #d9f5de;
+  border: 1px solid #003428;
+  border-radius: 10px;
+  flex: 1;
+  padding: 6px 22px;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17px;
+  resize: none;
+}
+
+.actionArea {
+  flex-shrink: 0;
+}
+
+@media (width <=640px) {
+  .inputField {
+      width: 100%;
+  }
+
+  .actionArea {
+      align-self: flex-end;
+  }
+}
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  background-color: #33511d;
+}
+
+.iconButton:hover {
+
+  background-color: #a2e96c00;
+  color: #003428;
+  outline-offset: 0px;
+  outline: 2px solid #a3e96c;
+}
+
+.iconButton:focus {
+  outline: 2px solid #33511d;
+  outline-offset: 2px;
+}
+
+
+.iconButton :global(.paper-plane-icon) {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}

@@ -1,0 +1,82 @@
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 4rem;
+    font-family: "Instrument Serif", "Roboto", sans-serif;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+  }
+  
+  .textarea {
+    min-height: 150px;
+    resize: vertical;   
+     font-family:  "Roboto", sans-serif;;
+  }
+
+  .textarea::placeholder{
+    font-family:  "Roboto", sans-serif;;
+  }
+  
+  .submitButton {
+    margin-top: 1rem;
+    background-color: #073c30;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  .submitButton:hover {
+    background-color: #b0f779;
+  }
+  
+  .mapContainer {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .italicText {
+    color: #003428;
+    font-family: "Instrument Serif", "Roboto", sans-serif;
+    color: #a3e96c; 
+  }
+
+  .calendarSection {
+    color: #003428;
+    font-family: "Instrument Serif", "Roboto", sans-serif;
+  }
+  
+  @media (max-width: 768px) {
+    .contactContainer {
+      padding: 1rem;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .mapContainer {
+      height: 300px;
+    }
+  }

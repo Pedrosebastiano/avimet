@@ -1,0 +1,47 @@
+.mainContainer{
+    margin-top: 10vh;
+    display: block;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+.container1{
+    margin: 75px;
+}
+.container2{
+    text-align: center;
+}
+
+.container3{
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+
+.titleMiddle {
+  font-style: italic;
+}
+
+.linkViewMore {
+  font-family: "Instrument Serif", "Roboto", sans-serif;
+  text-decoration: underline;
+  font-size: 1.3rem;
+  color: #003428;
+}
+
+.linkViewMore:hover{
+  color: #003428c4;
+}
+
+.viewMore{
+  align-self: flex-end;
+  margin-right: 10%;
+}
+
+

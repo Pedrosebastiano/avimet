@@ -1,0 +1,154 @@
+.contenedorCalendario {
+  width: 470px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.mesAnio {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 13px;
+}
+
+.flecha {
+  background-color: #ffffff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flecha:hover {
+  background-color: #f0f0f0;
+}
+
+.semana {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 8px;
+  color: #a0a0a0;
+}
+
+.diaSemana {
+  text-align: center;
+  font-weight: bold;
+}
+
+.dias {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.dia {
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+  
+  .dia:hover {
+    background-color: #a3e96c;
+  }
+  
+  .seleccionado {
+    background-color: #1d4f3f;
+    color: #ffffff;
+  }
+  
+  .especial {
+    background-color: #ffcc00;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  .footer {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .botonHecho {
+    background-color: #1d4f3f;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .botonHecho:hover {
+    background-color: #163f33;
+  }
+  
+  .seleccionTexto {
+    font-size: 14px;
+    color: #333333;
+  }
+
+  .especial {
+    background-color: #3a9a7b;
+  }
+  
+  .seleccionado {
+    background-color: #a3e96c;
+  }
+
+@media (max-width: 1280px) {
+  .contenedorCalendario {
+    align-items: center;  }
+}
+
+@media (max-width: 550px) {
+  .contenedorCalendario {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .mesAnio {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .flecha {
+    margin-top: 10px;
+  }
+
+  .semana {
+    display: none;
+  }
+
+  .dias {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+  }
+
+  .dia {
+    padding: 4px;
+    font-size: 16px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botonHecho {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,76 @@
+body {
+    font-family: "Roboto", "Inter", sans-serif;
+    background: #d9f5de;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+button {
+    font-weight: bold;
+    padding: 10px 64px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #003428;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #a3e96c;
+    color: #003428;
+}
+
+.btn-secondary {
+    background: #a3e96c;
+    color: #003428;
+}
+  
+.btn-secondary:hover {
+    background: #003428;
+    color: #fff;
+}
+
+.btn-tertiary {
+    color: #0DA665;
+    background-color: transparent;
+    font-size: 12px;
+    padding: 0;
+}
+  
+.btn-tertiary:hover {
+    color: #003428;
+}
+
+.btn-quaternary {
+    background-color: #a3e96c;
+    color: #003428;
+}
+
+.btn-quaternary:hover {
+    background-color: #d9f5de;
+    color: #003428;
+}
+
+ @media (width<=480px) {
+    button {
+        padding: 8px 35px;
+        font-size: 12px;
+    }
+
+    .btn-tertiary {
+        font-size: 10px;
+    }
+ }

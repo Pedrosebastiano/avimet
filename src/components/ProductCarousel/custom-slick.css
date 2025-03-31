@@ -1,0 +1,17 @@
+
+
+.slide-current {
+    padding: 0;
+    position: fixed;
+}
+
+.slick-slide {
+    margin: 0 10px;
+    width: fit-content;
+}
+
+/* @media (min-width: 768px) {
+    .slick-slide {
+        margin: 0;
+    }
+} */

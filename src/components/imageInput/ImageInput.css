@@ -1,0 +1,83 @@
+.imageContainer {
+    width: min-content;
+    align-self: center;
+}
+
+.label {
+    position: relative;
+    font-weight: bold;
+    color: #003428;  
+}
+
+.mainLabel {
+    bottom: 145px;
+    left: 40%;
+    font-size: 16px;
+}
+
+.mainLabel:hover {
+    color: #a3e96c;
+}
+
+.subLabel {
+    bottom: 78px;
+    left: 25%;
+    font-size: 14px;
+}
+
+.subLabel:hover {
+    color: #a3e96c;
+}
+
+.bottomLabel {
+    bottom: 47px;
+    left: 14%;
+    font-size: 12px;
+}
+
+.bottomLabel:hover {
+    color: #a3e96c;
+}
+
+.previewMain {
+    border: #003428 solid 3px;
+    width: 400px;
+    height: 265px;
+    object-fit: cover;
+    border-radius: 120px 35px;
+}
+
+.previewSub {
+    object-fit: cover;
+    width: 190px;
+    height: 126px;
+    border-radius: 57px 17px;
+    border: #003428 solid 3px;
+}
+
+.previewBottom {
+    object-fit: cover;
+    width: 95px;
+    height: 60px;
+    border-radius: 29px 9px;
+    border: #003428 solid 3px;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  input.visually-hidden:is(:focus, :focus-within) + label {
+    outline: thin dotted;
+  }
+
+.fileSelected {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}

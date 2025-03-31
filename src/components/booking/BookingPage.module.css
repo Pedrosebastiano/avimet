@@ -1,0 +1,229 @@
+.bookingPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #d9f5de; 
+  min-height: 88vh;
+  flex-direction: column; 
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem; 
+}
+
+.seleccionTexto {
+  text-align: center;
+  font-size: 20px; 
+  font-weight: bold; 
+  margin-top: 15px; 
+  margin-bottom: 15px; 
+  margin: 0 auto;
+}
+
+.bookingCard {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 660px;
+  overflow: hidden;
+  font-family: sans-serif;
+  height: auto;
+  padding: 20px;
+  margin-top: 10px;
+  min-height: 510px;
+}
+
+.priceInput {
+  width: 100px; 
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-align: right;
+  appearance: none; 
+  padding-left: 1.5rem; 
+}
+
+.priceInput::before {
+  content: '$';
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 1rem;
+}
+
+.headerSection {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.destinationImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titleSection h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.titleSection p {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.detailsSection {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.detailsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detailsRow h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.detailsRow p {
+  margin: 0;
+  color: #666;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.totalSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.comments-section {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.bookButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #073c30;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 25px;
+}
+
+.bookButton:hover {
+  background-color: #b0f779;
+}
+
+.carouselTitle {
+  color: #003428;
+  font-family: "Instrument Serif", "Roboto", sans-serif;
+  font-size: 3rem; 
+  margin: 20px;
+  margin-top: 67px;
+}
+
+.italicText {
+  font-style: italic;
+  color: #a3e96c; 
+}
+
+.calendarSection {
+  color: #003428;
+  margin-bottom: 10px;
+  font-family: Instrument Serif, serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 125%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  .contentContainer {
+    width: 100%;
+    display: grid;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .bookingCard {
+    width: 580px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bookingCard {
+    width: 500px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .bookingCard {
+    width: 340px;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .titleSection {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+@media (width < 362px) {
+  .bookingCard {
+    width: 260px;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+

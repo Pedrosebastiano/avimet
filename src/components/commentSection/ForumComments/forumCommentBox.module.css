@@ -1,0 +1,37 @@
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.forumContent {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 60%;
+  height: 755px;
+  margin: 20px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+  .forumContent {
+    height: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .forumContent {
+    width: 70%;
+    height: 500px;
+  }
+}

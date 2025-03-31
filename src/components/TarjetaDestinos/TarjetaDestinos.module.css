@@ -1,0 +1,85 @@
+.tarjetaDestino {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px auto;
+  color: white;
+  height: 320px;
+  max-width: 1250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+}
+
+.darkgreen {
+  background-color: #003428;
+}
+
+.lightgreen {
+  background-color: #0da665;
+}
+
+.imagenDestino {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  height: 80%;
+  object-fit: cover;
+  border: 3px solid #a3e96c;
+  border-radius: 10px 20px 110px 20px;
+}
+
+.contenidoDestino {
+  margin: 0 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tituloDestino {
+  font-size: 2em;
+  font-family: "Instrument Serif";
+  font-weight: lighter;
+  color: #a3e96c;
+  text-align: left;
+}
+
+.descripcionDestino {
+  font-size: 1em;
+  margin-bottom: 15px;
+  text-align: justify;
+  font-family: "Roboto", "Inter", sans-serif;
+}
+
+.boton-mas-info {
+  width: 100%;
+}
+
+@media (max-width: 1130px) {
+  .tarjetaDestino {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    width:80%;
+  }
+
+  .imagenDestino {
+    width: 70%;
+    height: auto;
+    margin: 30px 0;
+  }
+
+  .contenidoDestino {
+    align-items: center;
+  }
+
+  .tituloDestino {
+    text-align: center;
+  }
+  .botonMasInfo{
+    width: 100%;
+  }
+}

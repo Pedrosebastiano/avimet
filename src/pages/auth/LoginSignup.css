@@ -1,0 +1,204 @@
+.auth-btn {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.social-auth-btn {
+  font-size: 12px;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  font-size: x-small;
+  color: #003428;
+  font-weight: bold;
+}
+
+.error {
+  font-size: x-small;
+  color: #d14b4b;
+  font-weight: bold;
+}
+
+.image-container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+  margin-top: auto;
+  margin-bottom: -10px;
+  z-index: -1;
+}
+
+.image_mountain {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-box {
+  padding: 0px;
+  border-radius: 10px;
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+}
+.recovery{
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: gray;
+  font-size: 18px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.options p {
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.btn2 img {
+  width: 20px;
+  height: 20px;
+}
+
+a {
+  color: #0da665;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.boton-recovery{
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  gap: 12px; 
+  font-weight: bold;
+  background-color: #003428;
+  color: white;
+  margin: 10px 0px;
+}
+
+.boton-recovery:hover {
+  background-color: #a3e96c;
+  color: #003428;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #0da665;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .login-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1599px) {
+  .image-container {
+    margin-bottom: -35px;
+  }
+}
